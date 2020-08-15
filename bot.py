@@ -1,3 +1,3 @@
-import praw # pip install praw 
+import praw # pip install praw (not a default package)
 import random
 import json
