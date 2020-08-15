@@ -1,24 +1,26 @@
-{
-    "Basic Syntax": "[Trigger] + a dog" 
-}
+[
+    {
+        "Basic Syntax": "[Trigger] + a dog" 
+    },
 
-{
-    "Trigger": ["Has", "Got", "Fed", "Feed"],
-    "Response": "[Quote] Cool! Send dog pics!",
-    "End": "This is a stupid bot made by a stupid human who makes stupid mistakes. Report issues and send hate [HERE](https://github.com/Scaledi/Send-Dog-Pics-Reddit)"
-}
+    {
+        "Trigger": ["Has", "Got", "Fed", "Feed"],
+        "Response": "[Quote] Cool! Send dog pics!",
+        "End": "This is a stupid bot made by a stupid human who makes stupid mistakes. Report issues and send hate [HERE](https://github.com/Scaledi/Send-Dog-Pics-Reddit)"
+    },
 
-{
-    "Trigger": "Had",
-    "Response": "[Quote] sorry about that :(. have any pictures? I would love to see your dog."
-}
+    {
+        "Trigger": "Had",
+        "Response": "[Quote] sorry about that :(. have any pictures? I would love to see your dog."
+    },
 
-{
-    "Trigger": "Want",
-    "Response": "[Quote] What type of dog do you want?... and... find any cute pictures of that bread?"
-}
+    {
+        "Trigger": "Want",
+        "Response": "[Quote] What type of dog do you want?... and... find any cute pictures of that bread?"
+    },
 
-{
-    "Trigger": "Ate",
-    "Response": "Cursed."
-}
+    {
+        "Trigger": "Ate",
+        "Response": "Cursed."
+    }
+]
