@@ -1,7 +1,8 @@
 [
     {
-        "Basic Syntax": "[Trigger] + a dog",
-        "End": "This is a stupid bot made by a stupid human who makes stupid mistakes. Report issues and send hate [HERE](https://github.com/Scaledi/Send-Dog-Pics-Reddit)"
+        "BotTrigger": "[Trigger] + [Middle] + Dog",
+        "End": "This is a stupid bot made by a stupid human who makes stupid mistakes. Report issues and send hate [HERE](https://github.com/Scaledi/Send-Dog-Pics-Reddit)",
+        "Middle": ["a", "my"]
     },
 
     {
