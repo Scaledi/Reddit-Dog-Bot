@@ -8,9 +8,10 @@ fill your details into `templateconfig.py` then rename the file to `config.py`
 add new commands with
 
 ```
-elif re.search("triggers", comment.body, re.IGNORECASE):
-            comment.reply("reply")
-            print("done")
+        elif re.search("triggers", comment.body, re.IGNORECASE): # what it does
+            comment.save()
+            comment.reply("reply" + footer)
+            print("done tInt    ")
 ```
 
 ### Deffenitions
