@@ -40,7 +40,23 @@ subreddit = reddit.subreddit("bobdarobber") # The subs to respond in
 
 for comment in subreddit.stream.comments():
     if comment.saved == False:
-        if re.search("had a dog", comment.body, re.IGNORECASE): # Had a dog
+        if re.search("(had a dog)?(my dog died)?", comment.body, re.IGNORECASE): # Had a dog/my dog died
             comment.save()
-            comment.reply("Damn... really sorry to hear that." + footer)
-            print("done")
+            comment.reply("sorry for your loss :(. have any pictures? I would love to see your dog." + footer)
+            print("done t0")
+        elif re.search("(Has)?(Got)?(Fed)?(Feed)? (a)?(my)? dog", comment.body, re.IGNORECASE): # Has a dog
+            comment.save()
+            comment.reply("Cool! Send dog pics!" + footer)
+            print("done t1")
+        elif re.search("want a dog", comment.body, re.IGNORECASE): # want a dog
+            comment.save()
+            comment.reply("What type of dog do you want?... and... find any cute pictures of that breed?" + footer)
+            print("done t2")
+        elif re.search("ate a dog", comment.body, re.IGNORECASE): # ate a dog
+            comment.save()
+            comment.reply("What type of dog do you want?... and... find any cute pictures of that breed?" + footer)
+            print("done a damn monster")
+
+# Code Documentation
+# comment.save is the method used to avoid responding to the same comments if the bot reboots.
+# re.search("regex string", comment.body, re.IGNORECASE) = regex.search("regex string", incommentbody, ignoring case)
