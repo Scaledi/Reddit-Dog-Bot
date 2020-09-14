@@ -11,7 +11,7 @@
     },
 
     {
-        "Trigger": "Had",
+        "Trigger": ["Had", "Loved"],
         "Response": "[Quote] sorry about that :(. have any pictures? I would love to see your dog."
     },
 
