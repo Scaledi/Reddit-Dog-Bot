@@ -15,7 +15,7 @@ footer = """
 
 ---
 
-This is a stupid bot made by a stupid human who makes stupid mistakes. Report issues and send hate [HERE](https://github.com/Scaledi/Send-Dog-Pics-Reddit)
+This is a stupid bot made by a stupid human who makes stupid mistakes. Report issues and send hate [HERE](https://github.com/Scaledi/Reddit-Dog-Bot)
 """
 # endregion
 # region: login/debug
