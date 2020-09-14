@@ -1,7 +1,7 @@
 # A reddit bot that asks people for dog pics
 because who does not like dogs.
 
-fill your details into templateconfig.py
+fill your details into `templateconfig.py` then rename the file to `config.py`
 
 ---
 
