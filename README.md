@@ -11,17 +11,17 @@ add new commands with
         elif re.search("triggers", comment.body, re.IGNORECASE): # what it does
             comment.save()
             comment.reply("reply" + footer)
-            print("done tInt    ")
+            print("done tInt")
 ```
 
 ### Deffenitions
 
 **triggers**: what you want the bot to respond to.
 
-`had (a)?(my)? dog` this means it will respond to "had a dog" OR "had my dog". you can add others by following this regex syntax.
+`had (a|my) dog` this means it will respond to "had a dog" OR "had my dog". you can add others by following this regex syntax.
 
-ie: `(walked)?(fed)? (a)?(my)? dog` would allow for "walked a dog", "fed a dog", "walked my dog", and "fed my dog".
+ie: `(walked|fed) (a|my) dog` would allow for "walked a dog", "fed a dog", "walked my dog", and "fed my dog".
 
 **Reply**: what you want the bot to reply with.
 
-test commands with https://regex101.com
+test commands with https://regex101.com 
