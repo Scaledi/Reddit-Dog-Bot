@@ -61,12 +61,12 @@ try:
     for comment in subreddit.stream.comments():
         if comment.saved == False:
             listcomments()
-            if re.search("((my|our) (dog|doggo|pet) (died|got killed)|(we|I) put (our|my) (dog|doggo|pet) to sleep)", comment.body, re.IGNORECASE): # Had a dog/my dog died
+            if re.search("((my|our) (dog|doggo) (died|got killed)|(we|I) put (our|my) (dog|doggo|pet) to sleep)", comment.body, re.IGNORECASE): # Had a dog/my dog died
                 comment.save()
                 comment.reply("sorry for your loss :(. have any pictures? I would love to see your dog." + footer)
                 print("done t0")
                 ifrated()
-            elif re.search("(has|have|got|fed|feed|walk|walked) (a|my) dog", comment.body, re.IGNORECASE): # Has a dog
+            elif re.search("(has|have|got|fed|feed|walk|walked|pet|petted|pat) (a|my|our) (dog|doggo)", comment.body, re.IGNORECASE): # Has a dog
                 comment.save()
                 comment.reply("Cool! Send dog pics!" + footer)
                 print("done t1")
